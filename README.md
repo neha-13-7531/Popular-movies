@@ -4,13 +4,13 @@
 **The Popular Movies Dataset EDA project focuses on exploring and analyzing a dataset containing information about 1,000 popular movies collected from TMDB (The Movie Database). The goal is to extract meaningful insights from the data related to genres, ratings, popularity, and viewer engagement.**
 
 # Important Libraries
-**1.pandas**       :  Data manipulation and analysis .          
+**1.pandas**       :  Data manipulation and Data loading .          
 
 **2.numpy**       :  Numerical operations .                   
 
 **3.matplotlib** :  Basic plotting .                          
 
-**4.seaborn**  :    Statistical visualizations .              
+**4.seaborn**  :     advanced Statistical visualizations .              
 
 **5.plotly**    :    Interactive visualizations .              
 
@@ -40,13 +40,11 @@
   - Converted data types.
   - convert the release_date to datetime.
   - create extra column for profit.
-- Univariate Analysis: using graph
-  - Distribution of ratings, votes, and popularity
-  - Most frequent genres and years
 - Bivariate & Multivariate Analysis:
   - Relationship between year and popularity
   - also find this relation ship between  most popular movie by there vote average
-
+  - Find top most popular movies.
+  - Find correlation between vote_count,revenue and budget column.
 # Recommendations
 - Focus production and marketing on high-rated, high-popularity genres (e.g., action, drama, thriller).
 - Track how genre popularity shifts over time to predict future audience interests.
