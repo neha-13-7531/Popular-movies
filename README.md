@@ -1,54 +1,75 @@
-# Popular Movies Dataset
+# 🎬 Popular Movies Dataset – Exploratory Data Analysis
 
-# Project Overview
-**The Popular Movies Dataset EDA project focuses on exploring and analyzing a dataset containing information about 1,000 popular movies collected from TMDB (The Movie Database). The goal is to extract meaningful insights from the data related to genres, ratings, popularity, and viewer engagement.**
+This repository contains an in-depth Exploratory Data Analysis (EDA) on a dataset of 1,000 popular movies collected from TMDB (The Movie Database). The goal is to uncover trends and extract meaningful insights related to movie genres, ratings, popularity, production companies, and viewer preferences.
 
-# Important Libraries
-**1.pandas**       :  Data manipulation and Data loading .          
 
-**2.numpy**       :  Numerical operations .                   
+## 📊 Project Overview
 
-**3.matplotlib** :  Basic plotting .                          
+The analysis focuses on:
+- Identifying the most popular and profitable movie genres.
+- Exploring patterns in runtime, language, and production companies.
+- Understanding what drives a movie's popularity and revenue.
+- Delivering actionable recommendations for content creators and production studios.
 
-**4.seaborn**  :     advanced Statistical visualizations .              
+---
 
-**5.plotly**    :    Interactive visualizations .              
+## 📦 Dataset Features
+- **1 title**   :  Name of the movie 
+- **2.genre**    : Primary genre (e.g., Action, Comedy, Drama) 
+- **3.release_year** :  Year the movie was released 
+- **4.vote_average**  : Average user rating (1–10 scale) 
+- **5.vote_count**   :    Number of user votes 
+- **6.popularity** :   Popularity score (based on views, likes, etc.) 
+- **7.original_language**  : Original language (e.g., 'en' for English) 
+- **8.overview**      : Short plot summary 
+- **9.runtime**  :  Duration in minutes 
+- **10.tagline** :  Promotional tagline 
+- **11.production company** : Name of the production company 
+- **12.budget**        : Total budget for the movie 
+- **13.profit** :   Calculated as revenue - budget 
 
-**6.ydata-profiling** : create profile report. 
+## 🛠️ Libraries Used
 
-# Features
-- **1.title**:	Name of the movie
-- **2.genre** : 	Primary genre of the movie (e.g., Action, Comedy, Drama)
-- **3.release_year** : 	Year the movie was released
-- **4.vote_average** : 	Average user rating (typically on a scale from 1 to 10)
-- **5.vote_count** : 	Total number of votes submitted by users
-- **6.popularity** : 	Popularity score assigned by TMDB (based on views, likes, etc.)
-- **7.original_language** : 	Language in which the movie was originally made (e.g., 'en' for English)
-- **8.overview** : 	Short description or summary of the movie plot
-- **9.runtime**	Duration of the movie in minutes
-- **10.tagline** : 	Catchy promotional phrase used for the movie
-- **11.production company** : Name of production company.
-- **12.overview** : Get short info about movie.
-- **13.budget** : Total budget for movie.
+- **pandas** – Data manipulation and loading  
+- **numpy** – Numerical operations  
+- **matplotlib** – Basic plotting  
+- **seaborn** – Statistical visualizations  
+- **plotly** – Interactive visualizations  
+- **ydata-profiling** – For generating profiling reports  
 
-# steps in EDA
-- Data Import & Setup
-  - Loaded the dataset using Pandas
-  - Imported all required libraries (NumPy, Seaborn, Matplotlib, Plotly, YData Profiling)
-- Data Cleaning:
-  - Handled missing and duplicate values.
-  - Converted data types.
-  - convert the release_date to datetime.
-  - create extra column for profit.
-- Bivariate & Multivariate Analysis:
-  - Relationship between year and popularity
-  - also find this relation ship between  most popular movie by there vote average
-  - Find top most popular movies.
-  - Find correlation between vote_count,revenue and budget column.
-# Recommendations
+## 📈 Steps in EDA
+
+### 1. Data Import & Setup
+- Loaded the dataset using **pandas**
+- Imported required libraries
+
+### 2. Data Cleaning
+- Handled missing values and removed duplicates
+- Converted **release_date** to datetime format
+- Created a new column for **profit**
+
+### 3. Bivariate & Multivariate Analysis
+- Analyzed relationships between release year and popularity
+- Identified top-rated and most-voted movies
+- Visualized correlation between **vote_count**, **budget**, and **revenue**
+- Explored how genre and runtime affect movie success
+
+## 💡 Recommendations
 - Focus production and marketing on high-rated, high-popularity genres (e.g., action, drama, thriller).
 - Track how genre popularity shifts over time to predict future audience interests.
 - Understand audience sentiment to guide tone, messaging, and emotional appeal in content.
+- Normalize budget/revenue for inflation-adjusted insights.
+- People loved to watch sequence movies because actors are known and excited to see what will happens next.
+- Target runtimes within this window to maximize viewer satisfaction and retention while maintaining profitability in theaters and streaming platforms.
+- Study their production strategies and storytelling frameworks.
+
+
+
+
+
+
+
+
 
 
 
